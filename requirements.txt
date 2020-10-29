@@ -1,3 +1,5 @@
 git+https://github.com/terrier-org/pyterrier.git#egg=python-terrier
 pandas
 tqdm
+snapy
+mmh3
