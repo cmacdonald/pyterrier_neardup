@@ -18,7 +18,7 @@ class SnapyMinHash():
         for docid, (docno, text) in enumerate(iter):
             new_minhash = MinHash([text], n_gram=9, permutations=100, hash_bits=64, seed=3)
             self.lsh.update(new_minhash, [docno])
-            if docid % 1000 == 0:
+            if docid % 100 == 0:
                 print(docid)
 
     def transform(self, input):
